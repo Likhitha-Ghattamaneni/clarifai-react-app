@@ -1,4 +1,4 @@
-# ClarifAI — Company Document Insight Assistant
+# ClarifyAI — Company Document Insight Assistant
 
 ## Abstract
 ClarifAI is an internal, role-aware question-answering system designed for organizations that maintain controlled knowledge bases. The application allows employees to pose natural-language questions and receive precise, citation-backed responses derived exclusively from sanctioned documents. The solution adopts a Retrieval-Augmented Generation (RAG) pattern on AWS, coupling managed retrieval (Bedrock Knowledge Bases over OpenSearch Serverless) with lightweight generation via Bedrock foundation models. A React interface, hosted on Amplify and secured with Amazon Cognito, ensures simple access control (Admin vs Employee), rapid deployment, and low operational overhead.
