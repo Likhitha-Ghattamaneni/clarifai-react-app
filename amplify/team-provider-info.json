@@ -1,34 +1,16 @@
 {
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-clarifai-dev-1c31b-authRole",
-      "UnauthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifai-dev-1c31b-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifai-dev-1c31b-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-clarifai-dev-1c31b-deployment",
-      "UnauthRoleName": "amplify-clarifai-dev-1c31b-unauthRole",
-      "StackName": "amplify-clarifai-dev-1c31b",
-      "StackId": "arn:aws:cloudformation:us-east-1:353833416570:stack/amplify-clarifai-dev-1c31b/c8983630-b9f5-11f0-9d08-12e65b79eb4d",
-      "AmplifyAppId": "d1k5pyp7kadcjz"
-    },
-    "categories": {
-      "auth": {
-        "clarifai7f7ab2e0": {},
-        "userPoolGroups": {}
-      }
-    }
-  },
   "main": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-clarifai-main-9a307-authRole",
-      "UnauthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifai-main-9a307-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifai-main-9a307-authRole",
+      "AuthRoleName": "amplify-clarifaireactapp-main-05959-authRole",
+      "UnauthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifaireactapp-main-05959-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifaireactapp-main-05959-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-clarifai-main-9a307-deployment",
-      "UnauthRoleName": "amplify-clarifai-main-9a307-unauthRole",
-      "StackName": "amplify-clarifai-main-9a307",
-      "StackId": "arn:aws:cloudformation:us-east-1:353833416570:stack/amplify-clarifai-main-9a307/3c10acb0-be8c-11f0-b914-0edc3ffafd1d",
-      "AmplifyAppId": "d1uk7aso1sky9c"
+      "DeploymentBucketName": "amplify-clarifaireactapp-main-05959-deployment",
+      "UnauthRoleName": "amplify-clarifaireactapp-main-05959-unauthRole",
+      "StackName": "amplify-clarifaireactapp-main-05959",
+      "StackId": "arn:aws:cloudformation:us-east-1:353833416570:stack/amplify-clarifaireactapp-main-05959/7dbb4da0-ba81-11f0-bbfe-0affdaa27d2f",
+      "AmplifyAppId": "dy3ncpg8tl97e",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-clarifaireactapp-main-05959-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {

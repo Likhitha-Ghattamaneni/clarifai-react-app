@@ -1,4 +1,5 @@
 {
+  "api": {},
   "auth": {
     "clarifai7f7ab2e0": {
       "customAuth": false,
@@ -42,5 +43,6 @@
       "providerPlugin": "awscloudformation",
       "service": "Cognito-UserPool-Groups"
     }
-  }
+  },
+  "function": {}
 }
