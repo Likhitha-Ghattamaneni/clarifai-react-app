@@ -22,6 +22,7 @@ export default function UserDashboard({ signOut }) {
     // const confirmation = `Your query has been sent to the admin. Ticket ${ticketId}.`;
 
     setQuerying(true);
+    // setStatus(confirmation);
     setQuery("");
     setResponse("Searching for an answer...");
 

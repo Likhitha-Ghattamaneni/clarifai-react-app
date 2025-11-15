@@ -12,8 +12,10 @@ Amplify.configure(awsExports);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // The BrowserRouter should wrap the App component at the top level.
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <React.StrictMode>
+    {/* The BrowserRouter should wrap the App component at the top level. */}
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );
