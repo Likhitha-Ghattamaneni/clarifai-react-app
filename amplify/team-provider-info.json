@@ -49,35 +49,5 @@
         }
       }
     }
-  },
-  "staging": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-clarifai-staging-2dec3-authRole",
-      "UnauthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifai-staging-2dec3-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifai-staging-2dec3-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-clarifai-staging-2dec3-deployment",
-      "UnauthRoleName": "amplify-clarifai-staging-2dec3-unauthRole",
-      "StackName": "amplify-clarifai-staging-2dec3",
-      "StackId": "arn:aws:cloudformation:us-east-1:353833416570:stack/amplify-clarifai-staging-2dec3/",
-      "AmplifyAppId": "d1ktenahlbip4m"
-    },
-    "categories": {
-      "auth": {
-        "clarifai9c3029bd": {
-          "userPoolId": "us-east-1_co9Lw6LoC",
-          "userPoolName": "clarifai7f7ab2e0_userpool_7f7ab2e0-staging",
-          "webClientId": "jhus4md7urkcs46pd4d5m6ebm",
-          "nativeClientId": "jhus4md7urkcs46pd4d5m6ebm",
-          "identityPoolId": "us-east-1:2d4ed588-de7f-4336-9ee6-c1773f2ecce1",
-          "identityPoolName": "clarifai7f7ab2e0_identitypool_7f7ab2e0__staging",
-          "allowUnauthenticatedIdentities": false,
-          "authRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifai-staging-2dec3-authRole",
-          "authRoleName": "amplify-clarifai-staging-2dec3-authRole",
-          "unauthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifai-staging-2dec3-unauthRole",
-          "unauthRoleName": "amplify-clarifai-staging-2dec3-unauthRole"
-        }
-      }
-    }
   }
 }
