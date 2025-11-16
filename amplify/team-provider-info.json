@@ -1,23 +1,4 @@
 {
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-clarifai-dev-1c31b-authRole",
-      "UnauthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifai-dev-1c31b-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifai-dev-1c31b-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-clarifai-dev-1c31b-deployment",
-      "UnauthRoleName": "amplify-clarifai-dev-1c31b-unauthRole",
-      "StackName": "amplify-clarifai-dev-1c31b",
-      "StackId": "arn:aws:cloudformation:us-east-1:353833416570:stack/amplify-clarifai-dev-1c31b/c8983630-b9f5-11f0-9d08-12e65b79eb4d",
-      "AmplifyAppId": "d1k5pyp7kadcjz"
-    },
-    "categories": {
-      "auth": {
-        "clarifai7f7ab2e0": {},
-        "userPoolGroups": {}
-      }
-    }
-  },
   "main": {
     "awscloudformation": {
       "AuthRoleName": "amplify-clarifai-main-9a307-authRole",
@@ -32,8 +13,19 @@
     },
     "categories": {
       "auth": {
-        "clarifai7f7ab2e0": {},
-        "userPoolGroups": {}
+        "clarifaide0df3d5": {
+          "allowUnauthenticatedIdentities": false,
+          "authRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifaireactapp-main-05959-authRole",
+          "authRoleName": "amplify-clarifaireactapp-main-05959-authRole",
+          "identityPoolId": "us-east-1:c281ebbc-ed17-49b3-af31-217af826521a",
+          "identityPoolName": "clarifai7f7ab2e0_identitypool_7f7ab2e0__main",
+          "nativeClientId": "2rinutpgmkp5tdm19fis4eiae4",
+          "unauthRoleArn": "arn:aws:iam::353833416570:role/amplify-clarifaireactapp-main-05959-unauthRole",
+          "unauthRoleName": "amplify-clarifaireactapp-main-05959-unauthRole",
+          "userPoolId": "us-east-1_oCprUOs8K",
+          "userPoolName": "clarifai7f7ab2e0_userpool_7f7ab2e0-main",
+          "webClientId": "2rinutpgmkp5tdm19fis4eiae4"
+        }
       }
     }
   }

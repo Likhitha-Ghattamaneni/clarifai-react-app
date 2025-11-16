@@ -1,0 +1,103 @@
+/* Minimal placeholder styles for Home component to fix missing import error */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form-container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* small responsive image rules */
+.home-logo {
+  width: 120px;
+  height: auto;
+}
+.logo {
+  width: 350px;
+  height: auto;
+}
+/* Full-screen layout with a beautiful background */
+.home-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://media.istockphoto.com/id/1173149385/photo/technology-digital-wave-background-concept.jpg?s=612x612&w=0&k=20&c=tYfOYZt93bqcVuDzN_716OS4hXk8HtwzZUe3jnmGv6E=");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* Dark overlay to make text readable */
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Central content */
+.content-box {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  margin-bottom: 40px;
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.admin-btn {
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+}
+
+.user-btn {
+  background: linear-gradient(135deg, #28a745, #85ffbd);
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,46 +1,101 @@
 {
   "auth": {
-    "clarifai7f7ab2e0": {
+    "clarifaide0df3d5": {
       "customAuth": false,
       "dependsOn": [],
-      "frontendAuthConfig": {
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
-        ],
-        "passwordProtectionSettings": {
-          "passwordPolicyCharacters": [],
-          "passwordPolicyMinLength": 8
-        },
-        "signupAttributes": [
-          "EMAIL"
-        ],
-        "socialProviders": [],
-        "usernameAttributes": [
-          "EMAIL"
-        ],
-        "verificationMechanisms": [
-          "EMAIL"
-        ]
-      },
       "providerPlugin": "awscloudformation",
-      "service": "Cognito"
-    },
-    "userPoolGroups": {
-      "dependsOn": [
+      "service": "Cognito",
+      "serviceType": "imported"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_auth_clarifaide0df3d5_allowUnauthenticatedIdentities": {
+      "usedBy": [
         {
-          "attributes": [
-            "UserPoolId",
-            "AppClientIDWeb",
-            "AppClientID",
-            "IdentityPoolId"
-          ],
           "category": "auth",
-          "resourceName": "clarifai7f7ab2e0"
+          "resourceName": "clarifaide0df3d5"
         }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "Cognito-UserPool-Groups"
+      ]
+    },
+    "AMPLIFY_auth_clarifaide0df3d5_authRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "clarifaide0df3d5"
+        }
+      ]
+    },
+    "AMPLIFY_auth_clarifaide0df3d5_authRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "clarifaide0df3d5"
+        }
+      ]
+    },
+    "AMPLIFY_auth_clarifaide0df3d5_identityPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "clarifaide0df3d5"
+        }
+      ]
+    },
+    "AMPLIFY_auth_clarifaide0df3d5_identityPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "clarifaide0df3d5"
+        }
+      ]
+    },
+    "AMPLIFY_auth_clarifaide0df3d5_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "clarifaide0df3d5"
+        }
+      ]
+    },
+    "AMPLIFY_auth_clarifaide0df3d5_unauthRoleArn": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "clarifaide0df3d5"
+        }
+      ]
+    },
+    "AMPLIFY_auth_clarifaide0df3d5_unauthRoleName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "clarifaide0df3d5"
+        }
+      ]
+    },
+    "AMPLIFY_auth_clarifaide0df3d5_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "clarifaide0df3d5"
+        }
+      ]
+    },
+    "AMPLIFY_auth_clarifaide0df3d5_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "clarifaide0df3d5"
+        }
+      ]
+    },
+    "AMPLIFY_auth_clarifaide0df3d5_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "clarifaide0df3d5"
+        }
+      ]
     }
   }
 }
