@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './UserLogin.css'; // Reuse existing styles
-import { signIn, resetPassword, signUp } from 'aws-amplify/auth';
+import { signIn, resetPassword, signUp, signOut } from 'aws-amplify/auth';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -9,6 +9,15 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+
+  async function handleSignOut() {
+    try {
+      await signOut();
+      navigate('/'); // Redirect to home page after sign out
+    } catch (error) {
+      console.error('error signing out: ', error);
+    }
+  }
 
   async function handleLogin(e) {
     e.preventDefault();
