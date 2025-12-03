@@ -10,6 +10,8 @@ export default function AdminDashboard({ signOut }) {
   const navigate = useNavigate();
 
   const [file, setFile] = useState(null);
+  const [query, setQuery] = useState('');
+  const [response, setResponse] = useState('');
   const [uploading, setUploading] = useState(false);
   const [uploadStatus, setUploadStatus] = useState('');
   const [progress, setProgress] = useState(0);
@@ -162,16 +164,10 @@ export default function AdminDashboard({ signOut }) {
           <button className="btn outline" type="button" onClick={signOut}>
             Logout
           </button>
-        </div>
-      </header>
-
-      <main className="dashboard">
-        {/* Left: Upload */}
-        <section className="card">
-          <h3 className="card-title">Upload Documents</h3>
-          <p className="card-subtitle">
-            Securely upload PDFs, images, or spreadsheets for review.
+          <p className="info-text">
+            After uploading, remember to sync your Knowledge Base in AWS Bedrock Console.
           </p>
+        </div>
 
           <label htmlFor="fileInput" className="dropzone">
             <div className="dz-icon">📄</div>
@@ -218,6 +214,11 @@ export default function AdminDashboard({ signOut }) {
               </div>
             </>
           )}
+        </div>
+      </div>
+    </div>
+  );
+}
 
           {uploadStatus && (
             <div className="helper" style={{ marginTop: '10px' }}>{uploadStatus}</div>
@@ -228,12 +229,10 @@ export default function AdminDashboard({ signOut }) {
           </div>
         </section>
 
-        {/* Right: Chatbot */}
-        <section className="card">
-          <h3 className="card-title">Chatbot</h3>
-          <p className="card-subtitle">
-            Ask a question and draft a response. History is saved below.
-          </p>
+// import React, { useState } from 'react';
+// import { API } from 'aws-amplify';
+// import { apiConfig } from '../aws-config';
+// import './Dashboard.css';
 
           <div className="chat-form">
             <input
