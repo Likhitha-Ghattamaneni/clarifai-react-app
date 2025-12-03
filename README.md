@@ -1,4 +1,4 @@
-````markdown
+
 # ClarifyAI — Company Document Insight Assistant
 
 > Internal, role-aware RAG assistant that delivers citation-backed answers from approved company documents using AWS Bedrock, S3 Vector Store Serverless, and a serverless AWS backend. :contentReference[oaicite:0]{index=0}  
