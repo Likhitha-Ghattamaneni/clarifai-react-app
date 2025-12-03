@@ -1,7 +1,7 @@
 
 # ClarifyAI — Company Document Insight Assistant
 
-> Internal, role-aware RAG assistant that delivers citation-backed answers from approved company documents using AWS Bedrock, S3 Vector Store Serverless, and a serverless AWS backend. :contentReference[oaicite:0]{index=0}  
+Internal, role-aware RAG assistant that delivers citation-backed answers from approved company documents using AWS Bedrock, S3 Vector Store Serverless, and a serverless AWS backend. :contentReference[oaicite:0]{index=0}  
 
 ---
 
@@ -98,7 +98,7 @@ ClarifyAI follows a **layered RAG architecture** that separates concerns for rob
    - Uploads intentional and traceable  
    - Vector store used for k-NN semantic retrieval
 
-> _See `docs/architecture.png` or `System Architecture` figure for the diagram._ :contentReference[oaicite:4]{index=4}  
+<img width="1090" height="442" alt="image" src="https://github.com/user-attachments/assets/efa6663d-f46a-4786-9138-9e38243de06c" /  :contentReference[oaicite:4]{index=4}  
 
 ---
 
@@ -117,7 +117,7 @@ ClarifyAI consists of:
 
 ### Admin Workflow
 
-> Securely managing the knowledge corpus. :contentReference[oaicite:6]{index=6}  
+Securely managing the knowledge corpus. :contentReference[oaicite:6]{index=6}  
 
 1. **Authenticate & Upload**
    - Admin signs in via Amplify UI (Cognito).  
@@ -135,7 +135,7 @@ ClarifyAI consists of:
 
 ### Employee Workflow
 
-> Querying for trusted, verifiable insights. :contentReference[oaicite:7]{index=7}  
+Querying for trusted, verifiable insights. :contentReference[oaicite:7]{index=7}  
 
 1. **Authenticate & Query**
    - Employee signs in via Amplify UI (Cognito).  
@@ -171,7 +171,7 @@ ClarifyAI consists of:
 
 - **React** single-page application.  
 - **aws-amplify** for Auth + API integration.  
-- **@aws-amplify/ui-react** for `<Authenticator />` and UI components.
+- **@aws-amplify/ui-react** for `<Authenticator / ` and UI components.
 
 ### DevOps
 
@@ -184,7 +184,7 @@ ClarifyAI consists of:
 
 ### Amplify-Hosted React UI
 
-> Deployed frontend for Admin/User dashboards and Q&A. :contentReference[oaicite:9]{index=9}  
+Deployed frontend for Admin/User dashboards and Q&A. :contentReference[oaicite:9]{index=9}  
 
 **Configuration (summary):**
 
@@ -196,7 +196,7 @@ ClarifyAI consists of:
 
 ### Amazon Cognito (User Pool + Identity Pool)
 
-> Auth, groups, and scoped AWS credentials. :contentReference[oaicite:10]{index=10}  
+  Auth, groups, and scoped AWS credentials. :contentReference[oaicite:10]{index=10}  
 
 - User Pool for sign-in (email username).  
 - App Client (no secret) for SPA.  
@@ -208,12 +208,12 @@ ClarifyAI consists of:
   - `Users` → default authenticated role  
 - React configured with User Pool ID, App Client ID, Identity Pool ID.
 
-> **Maintenance:** Whenever documents change or are added, re-sync the KB.  
-> _Repeat: upload → Sync → quick test._
+  **Maintenance:** Whenever documents change or are added, re-sync the KB.  
+  _Repeat: upload → Sync → quick test._
 
 ### Amazon API Gateway
 
-> Front door for `/query` and `/upload`. :contentReference[oaicite:11]{index=11}  
+  Front door for `/query` and `/upload`. :contentReference[oaicite:11]{index=11}  
 
 - API Name: `ClarifyAIAPI` (us-east-1)  
 - Routes:
@@ -233,7 +233,7 @@ ClarifyAI consists of:
 
 ### AWS Lambda
 
-> Backend logic for RAG queries and document uploads. 
+  Backend logic for RAG queries and document uploads. 
 
 **RAGQueryFunction**
 
@@ -258,7 +258,7 @@ ClarifyAI consists of:
 
 ### Bedrock Knowledge Base & S3 Vector Store
 
-> Ingestion, chunking, embeddings, and semantic retrieval. 
+  Ingestion, chunking, embeddings, and semantic retrieval. 
 
 **Knowledge Base core settings:**
 
@@ -277,7 +277,7 @@ ClarifyAI consists of:
 
 ### Amazon S3
 
-> Authoritative document corpus + KB artifacts. 
+  Authoritative document corpus + KB artifacts. 
 
 * Bucket: `clarifyai-kb-s3vector`
 * Region: `us-east-1`
@@ -308,7 +308,7 @@ ClarifyAI answers policy-relevant questions, so access control is critical.
 
   * S3 encryption at rest, TLS in transit, CloudTrail for audit logs.
 
-> *See IAM roles table in the report for full list of roles and policies.* 
+  *See IAM roles table in the report for full list of roles and policies.* 
 
 ---
 
@@ -378,7 +378,5 @@ ClarifyAI uses **Amplify Hosting** for build & deploy:
 ## Acknowledgements
 
 Thank you for giving us the opportunity to design and build this project and to work hands-on with AWS services. Being able to configure and integrate services like Cognito, API Gateway, Lambda, Bedrock, S3, and Amplify has significantly deepened our understanding of cloud-native architectures and retrieval-augmented generation. This hands-on experience has been extremely valuable for our technical growth and has helped us connect classroom concepts with real-world implementation.
-
-````
 
 
